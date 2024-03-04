@@ -18,7 +18,6 @@
 First initialize Payhere in the entry point of your Single Page App, by specifying the merchant ID and the account type as follows.
 
 ```js
-import {Payhere, AccountCategory} from "@payhere-js-sdk/client"
 
 // Sandbox 
 Payhere.init("12xxxxx",AccountCategory.SANDBOX)
@@ -30,7 +29,6 @@ Payhere.init("12xxxxx",AccountCategory.LIVE)
 ### Checkout
 
 ```js
-import {Customer, CurrencyType, PayhereCheckout, CheckoutParams} from '@payhere-js-sdk/client'
 
 function onPayhereCheckoutError(errorMsg) {
   alert(errorMsg)
@@ -65,7 +63,6 @@ function checkout() {
 ### Subscription
 
 ```js
-import {PayhereSubscription,SubscriptionParams, Customer, Month,CurrencyType} from '@payhere-js-sdk/client'
 
 function onPayhereSubscriptionError(errorMsg) {
   alert(errorMsg)
@@ -106,7 +103,6 @@ function initSubscription() {
 ### Preapproval
 
 ```js
-import {PayherePreapproval,PreapprovalParams, Customer, CurrencyType} from '@payhere-js-sdk/client'
 
 function preApprove() {
   const customer = new Customer({
